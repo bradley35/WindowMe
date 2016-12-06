@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/annotations-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/catalina-storeconfig.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/catalina.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/ecj-4.5.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/el-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/jasper-el.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/jasper.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/jaspic-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/jsp-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-util-scan.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/tomcat-websocket.jar"/>
+	<classpathentry kind="lib" path="/Users/Bradley/Desktop/Libs2/websocket-api.jar"/>
+	<classpathentry kind="lib" path="/Applications/Tomcat/webapps/ROOT/WEB-INF/lib/javax.mail.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

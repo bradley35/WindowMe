@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+	var enabled=false;
+	var code="POOP";
+	function enableBtn(){
+	enabled=true;
+	code=document.getElementById("form").elements["g-recaptcha-response"].value
+	}
+	function codes(){
+	
+	return code;
+	}
+	</script>
+</head>
+<body style="background-color: #EDEDED;">
+<div style="background-color:white; padding:10px 5px 20px 5px; border: 1px solid #E3E3E3; border-radius: 12px;">
+<h1 style="text-align:center;">To continue using WindowMe, please verify that you are not a robot </h1>
+<p style="text-align:center;">Due to the heavy strain that WindowMe puts on our servers, we have to take precautions to ensure maximum reliability. Sorry for the inconvenience.</p>
+<div>
+<container  style="position:absolute; bottom:0; left:50%; transform:translate(-50%, -50%);">
+<form id="form">
+<div align="center" data-callback="enableBtn" class="g-recaptcha" data-sitekey="6LeRigUTAAAAAFRUJj20feP_CtENCcAh0j39uYFx"></div>
+</form>
+</container>
+</body>
+</html>

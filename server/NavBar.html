@@ -1,0 +1,195 @@
+<html><head>
+<link rel="stylesheet" href="NavBar.css">
+<link rel="stylesheet" href="MainPage.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="NavBar.js"></script>
+<script src="Login.js"></script>
+<script src="WebSocket.js"></script>
+<script type="text/javascript">
+var onloadCallback = function() {
+//alert("ready");
+        widgetIDs.push(grecaptcha.render('captcha-here-login', {
+          'sitekey' : '6LeRigUTAAAAAFRUJj20feP_CtENCcAh0j39uYFx',
+'theme':'dark',
+'callback':captchalogincallback
+        }));
+$("#captcha-here-login").css({
+padding:0,
+margin:0,
+left:"-20px",
+top:"0px",
+position:"relative"
+});
+$("#captcha-here-login").find("div").first().css({
+display:"block",
+width:"152px",
+height:"39px"
+});
+$("#captcha-here-login").find("div").first().find("div").first().css({
+transform: "scale(0.5, 0.5)"
+});
+$("#captcha-here-login").find("div").first().find("div").first().find("iframe").first().css({
+height:"78px",
+width:"304px",
+position:"relative",
+transform: "translate(-76px, -39px)",
+display:"block",
+padding: "0px",
+margin: "0px"
+});
+
+$("#captcha-here-login").find("div").first().find("div").first().find("iframe").first().contents().find("body").css({
+transform: "scale(0.5, 0.5) translate(-76px, -39px)"
+});
+widgetIDs.push(grecaptcha.render('captcha-here-register', {
+    'sitekey' : '6LeRigUTAAAAAFRUJj20feP_CtENCcAh0j39uYFx',
+'theme':'dark',
+'callback':captcharegistercallback
+  }));
+$("#captcha-here-register").css({
+padding:0,
+margin:0,
+left:"-20px",
+top:"0px",
+position:"relative"
+});
+$("#captcha-here-register").find("div").first().css({
+display:"block",
+width:"152px",
+height:"39px"
+});
+$("#captcha-here-register").find("div").first().find("div").first().css({
+transform: "scale(0.5, 0.5)"
+});
+$("#captcha-here-register").find("div").first().find("div").first().find("iframe").first().css({
+height:"78px",
+width:"304px",
+position:"relative",
+transform: "translate(-76px, -39px)",
+display:"block",
+padding: "0px",
+margin: "0px"
+});
+
+$("#captcha-here-register").find("div").first().find("div").first().find("iframe").first().contents().find("body").css({
+transform: "scale(0.5, 0.5) translate(-76px, -39px)"
+});
+};
+
+</script>
+
+
+</head>
+<body><div class="loading" style="opacity: 0.3; display: none;"><img src="http://www.multistructuresng.com/images/ring.gif" height="200px" width="200px"></div>
+
+<navbar>
+<navitem class="left">
+<a class="btn">Home</a>
+</navitem>
+<navitem style="display: initial;" class="left login">
+<a class="btn" id="R">Saved Classrooms</a>
+<navdropdown id="Save" style="width:325px; position:absolute; padding-right:0;">
+<a class="namingHolder" style="background-color: rgb(0, 78, 179); text-align: center; position: absolute; width: 275px; left: 0%; cursor: default;">Save Current Room
+<form class="naming" style="overflow:visible; height:0; margin:0; padding:0;">
+
+<input id="name" style="width: 100%; height: 100%; left: 100%; top: 0px; position: absolute; background-color: rgb(3, 63, 141); display:block" placeholder="Name" type="text">
+<input class="AddSub" style="width: 100%; height: 100%; left: 100%; top: 100%; position: absolute; display:block; cursor: pointer; text-align:center;" value="Add" type="submit">
+
+</input>
+</form>
+</a>
+
+
+</navdropdown>
+
+</navitem>
+
+
+
+<navitem class="right">
+<form id="formCode" style="margin:0; padding:0;">
+<a><input placeholder="Enter Watch Code" id="Code" style="" type="text"></a>
+<navdropdown style="width:200px;">
+<a><input class="submit" value="GO" type="submit"></a>
+</navdropdown>
+</form>
+</navitem>
+<navitem style="display: none;" class="right logot">
+<a class="btn">Login</a>
+<navdropdown>
+<form id="formPass">
+<a><input placeholder="Username" id="U" autocomplete="off" type="text"></a>
+<a><input placeholder="Password" id="P" type="password" autocomplete="off"></a>
+<a id="captcha-holder" style=""><div id="captcha-here-login" style=""></div></a>
+<a style="border-top: thin solid black"><input class="submit" value="Submit" type="submit"></a>
+</form>
+</navdropdown>
+</navitem>
+
+<navitem style="display: none;" class="right signup logot">
+<a class="btn">Sign Up</a>
+<navdropdown>
+<form id="formReg">
+<a><input placeholder="Username" id="U2" autocomplete="off" type="text"></a>
+<a><input placeholder="Password" id="P2" autocomplete="off" type="password"></a>
+<a><input placeholder="Repeat" id="P3" autocomplete="off" type="password"></a>
+<a><input placeholder="Full Name" id="N" autocomplete="off" type="text"></a>
+<a><input placeholder="Email" id="E" autocomplete="off" type="email"></a>
+<a id="captcha-holder" style=""><div id="captcha-here-register" style=""></div></a>
+<a style="border-top: thin solid black"><input class="submit" value="Submit" type="submit"></a>
+</form>
+</navdropdown>
+</navitem>
+</navbar>
+
+
+<div class="noImage"></div>
+<div class="Image" style="display:none">
+<img style="width:100%; height:100%;" id="Contain">
+</div>
+
+<script>
+initializeWebSocket();
+
+</script>
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer></script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="One">
+<div class="inner-left">
+<h1 style="text-align:center;">WindowMe Anywhere</h1>
+<p>WindowMe can be used for anything, anywhere, as long as you have an internet connection.
+
+Giving a presenation and you want everybody to have a copy?   <a style="text-color:green;">✓</a></p>
+Need to easily share your screen with someone you know?   <a style="text-color:green;">✓</a></p>
+Want to send a live feed of what you are working on to the world?   <a style="text-color:green;">✓</a></p>
+</div>    
+</div> 
+</body></html>
